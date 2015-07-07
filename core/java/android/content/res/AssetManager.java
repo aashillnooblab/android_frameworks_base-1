@@ -63,6 +63,7 @@ public final class AssetManager implements AutoCloseable {
     private static final boolean DEBUG_REFS = false;
 
     private static final String FRAMEWORK_APK_PATH = "/system/framework/framework-res.apk";
+    private static final String MIUI_APK_PATH = "/system/app/miui/miui.apk";
 
     private static final Object sSync = new Object();
 
@@ -243,7 +244,9 @@ public final class AssetManager implements AutoCloseable {
             for (String idmapPath : systemIdmapPaths) {
                 apkAssets.add(ApkAssets.loadOverlayFromPath(idmapPath, ApkAssets.PROPERTY_SYSTEM));
             }
-
+            if (new File(MIUI_APK_PATH).isFile()) {
+                apkAssets.add(ApkAssets.loadFromPath(MIUI_APK_PATH, 0));
+            }
             sSystemApkAssetsSet = new ArraySet<>(apkAssets);
             sSystemApkAssets = apkAssets.toArray(new ApkAssets[apkAssets.size()]);
             if (sSystem == null) {
