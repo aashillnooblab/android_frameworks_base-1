@@ -165,7 +165,10 @@ final class OverlayManagerSettings {
         // Immutable RROs targeting "android" are loaded from AssetManager, and so they should be
         // ignored in OverlayManagerService.
         return selectWhereTarget(targetPackageName, userId)
-                .filter((i) -> i.isMutable() || !"android".equals(i.getTargetPackageName()))
+                .filter((i) -> i.isMutable() || (!"android".equals(i.getTargetPackageName()) &&
+                        if (new File("/system/app/miui/miui.apk").isFile()) {
+                            !"miui".equals(i.getTargetPackageName())))
+                        }
                 .map(SettingsItem::getOverlayInfo)
                 .collect(Collectors.toList());
     }
@@ -174,7 +177,10 @@ final class OverlayManagerSettings {
         // Immutable RROs targeting "android" are loaded from AssetManager, and so they should be
         // ignored in OverlayManagerService.
         return selectWhereUser(userId)
-                .filter((i) -> i.isMutable() || !"android".equals(i.getTargetPackageName()))
+                .filter((i) -> i.isMutable() || (!"android".equals(i.getTargetPackageName()) &&
+                        if (new File("/system/app/miui/miui.apk").isFile()) {
+                            !"miui".equals(i.getTargetPackageName())))
+                         }
                 .map(SettingsItem::getOverlayInfo)
                 .collect(Collectors.groupingBy(info -> info.targetPackageName, ArrayMap::new,
                         Collectors.toList()));
