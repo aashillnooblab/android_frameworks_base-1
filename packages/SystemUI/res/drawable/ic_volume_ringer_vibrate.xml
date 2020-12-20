@@ -1,26 +1,10 @@
-<!--
-     Copyright (C) 2017 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="19dp"
-    android:width="19dp"
-    android:viewportHeight="24.0"
-    android:viewportWidth="24.0">
-
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
     <path
         android:fillColor="#000000"
-        android:pathData="M 8 0 L 16 0 C 16.53 0 17.039 0.211 17.414 0.586 C 17.789 0.961 18 1.47 18 2 L 18 20 C 18 20.53 17.789 21.039 17.414 21.414 C 17.039 21.789 16.53 22 16 22 L 8 22 C 7.47 22 6.961 21.789 6.586 21.414 C 6.211 21.039 6 20.53 6 20 L 6 2 C 6 1.47 6.211 0.961 6.586 0.586 C 6.961 0.211 7.47 0 8 0 M 4 4 C 4.265 4 4.52 4.105 4.707 4.293 C 4.895 4.48 5 4.735 5 5 L 5 18 C 5 18.265 4.895 18.52 4.707 18.707 C 4.52 18.895 4.265 19 4 19 C 3.735 19 3.48 18.895 3.293 18.707 C 3.105 18.52 3 18.265 3 18 L 3 5 C 3 4.735 3.105 4.48 3.293 4.293 C 3.48 4.105 3.735 4 4 4 M 1 8 C 1.265 8 1.52 8.105 1.707 8.293 C 1.895 8.48 2 8.735 2 9 L 2 14 C 2 14.265 1.895 14.52 1.707 14.707 C 1.52 14.895 1.265 15 1 15 C 0.735 15 0.48 14.895 0.293 14.707 C 0.105 14.52 0 14.265 0 14 L 0 9 C 0 8.735 0.105 8.48 0.293 8.293 C 0.48 8.105 0.735 8 1 8 M 23 8 C 23.265 8 23.52 8.105 23.707 8.293 C 23.895 8.48 24 8.735 24 9 L 24 14 C 24 14.265 23.895 14.52 23.707 14.707 C 23.52 14.895 23.265 15 23 15 C 22.735 15 22.48 14.895 22.293 14.707 C 22.105 14.52 22 14.265 22 14 L 22 9 C 22 8.735 22.105 8.48 22.293 8.293 C 22.48 8.105 22.735 8 23 8 M 20 4 C 20.265 4 20.52 4.105 20.707 4.293 C 20.895 4.48 21 4.735 21 5 L 21 18 C 21 18.265 20.895 18.52 20.707 18.707 C 20.52 18.895 20.265 19 20 19 C 19.735 19 19.48 18.895 19.293 18.707 C 19.105 18.52 19 18.265 19 18 L 19 5 C 19 4.735 19.105 4.48 19.293 4.293 C 19.48 4.105 19.735 4 20 4"
-        android:strokeWidth="1"/>
+        android:fillType="evenOdd"
+        android:pathData="M7 2.9c-0.027 0-0.052 0.01-0.07 0.03C6.91 2.947 6.9 2.973 6.9 3v18.1H17c0.026 0 0.052-0.01 0.07-0.03 0.02-0.018 0.03-0.043 0.03-0.07V3c0-0.026-0.01-0.052-0.03-0.07C17.053 2.91 17.027 2.9 17 2.9H7zM5.657 1.657C6.013 1.3 6.497 1.1 7 1.1h10c0.504 0 0.987 0.2 1.343 0.557C18.7 2.013 18.9 2.497 18.9 3v18c0 0.504-0.2 0.987-0.556 1.344C17.986 22.7 17.503 22.9 17 22.9H5.1V3c0-0.504 0.2-0.987 0.557-1.343zm-3.93 4.072l2 2.74c0.24 0.329 0.23 0.776-0.024 1.093L2.153 11.5l1.55 1.938c0.237 0.297 0.263 0.711 0.063 1.035l-2 3.24-1.532-0.945 1.667-2.7-1.604-2.006c-0.263-0.328-0.263-0.795 0-1.124l1.57-1.963L0.274 6.79l1.454-1.061zm18.507 3.298l2-3.24 1.532 0.945-1.667 2.701 1.604 2.005c0.263 0.329 0.263 0.796 0 1.124l-1.57 1.963 1.594 2.186-1.454 1.06-2-2.74c-0.24-0.328-0.23-0.776 0.024-1.093L21.847 12l-1.55-1.938c-0.237-0.297-0.263-0.71-0.063-1.034z" />
 </vector>
